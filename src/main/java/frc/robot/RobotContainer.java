@@ -46,7 +46,7 @@ public class RobotContainer {
                             
 
       m_driverController.leftTrigger(0.5).onTrue(new ShootMaxRangeSpkrSCG(shooterSubsystem,kickerSubsystem));
-
+      
   }
 
   /**

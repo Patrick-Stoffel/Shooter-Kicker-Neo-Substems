@@ -16,7 +16,7 @@ public class KickerSubsystem extends SubsystemBase {
 
   public KickerSubsystem() {
 
-    kickerMotor = new CANSparkMax (15, MotorType.kBrushless);
+    kickerMotor = new CANSparkMax (22, MotorType.kBrushless);
     kickerMotor.restoreFactoryDefaults();
     kickerMotor.setSmartCurrentLimit(80);
   }
