@@ -14,12 +14,14 @@ import frc.robot.subsystems.ShooterSubsystem;
 // https://docs.wpilib.org/en/stable/docs/software/commandbased/convenience-features.html
 
 public class ShootMaxRangeSpkrSCG extends SequentialCommandGroup {
+
+
   /** Creates a new ShootMaxRangeSpkrSCG. */
-  private ShooterSubsystem shooterSubsystem;
-  private KickerSubsystem kickerSubsystem;
+//  private ShooterSubsystem shooterSubsystem;
+//  private KickerSubsystem kickerSubsystem;
 
 
-  public ShootMaxRangeSpkrSCG(ShooterSubsystem shooterSubsystem2, KickerSubsystem kickerSubsystem2) {
+  public ShootMaxRangeSpkrSCG(ShooterSubsystem shooterSubsystem, KickerSubsystem kickerSubsystem) {
 
     // Add your commands in the addCommands() call, e.g.
     // addCommands(new FooCommand(), new BarCommand());
@@ -32,4 +34,6 @@ public class ShootMaxRangeSpkrSCG extends SequentialCommandGroup {
       new KickerFwdCmd(kickerSubsystem, 0)
     );
   }
+
+
 }
